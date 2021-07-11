@@ -18,10 +18,6 @@ class App extends React.Component {
             <Header />
             <Switch>
               <Route
-                exact
-                path="/"
-                component={ MovieList } />
-              <Route
                 path="/movies/new"
                 render={ (props) => <NewMovie { ...props } /> } />
               <Route
@@ -32,6 +28,10 @@ class App extends React.Component {
                 path="/movies/:id"
                 render={ (props) => <MovieDetails { ...props } /> }
               />
+              <Route
+                exact
+                path="/"
+                component={ MovieList } />
               <Route path="/:*" component={ NotFound } />
             </Switch>
           </div>
