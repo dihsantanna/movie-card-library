@@ -1,0 +1,26 @@
+.movie-card-header {
+  align-items: center;
+  background-color: black;
+  border-bottom: 1px #c2c2c2 solid;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.page-title {
+  color: #e44d26;
+  font-family: Monoton , cursive;
+  font-size: 45px;
+  font-weight: 400;
+  margin: 10px;
+  text-align: center;
+}
+
+@media screen and ( max-width : 598px ) {
+
+  .page-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}

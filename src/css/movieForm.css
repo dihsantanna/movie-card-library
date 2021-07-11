@@ -1,0 +1,159 @@
+.movie-form {
+  background-color: #222426;
+  border: 2px solid #f48024;
+  border-radius: 10px;
+  color: #c2c2c2;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 30px;
+  width: 80%;
+}
+
+.form-title {
+  margin-bottom: 50px;
+}
+
+.movie-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  width: 100%;
+}
+
+.movie-form input {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 5px;
+  width: 90%;
+}
+
+.movie-rating input {
+  width: 15%;
+}
+
+.movie-form input:hover {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+.movie-form input:focus {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+.movie-form textarea {
+  border: solid 2px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 5px;
+  resize: none;
+  width: 90%;
+}
+
+.movie-form textarea:hover {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+.movie-form textarea:focus {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+.movie-form select {
+  background-color: #fafafa;
+  border: solid 2px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 61.2%;
+  outline: none;
+  padding: 5px;
+  width: 20%;
+}
+
+.movie-form select:hover {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+.btn-container {
+  display: flex;
+  width: 100%;
+}
+
+.movie-form button {
+  background-color: #dd3308;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 3px 0 2px rgb(58, 58, 58);
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 14pt;
+  height: 40px;
+  margin: 10px auto;
+  opacity: 0.8;
+  outline: none;
+  text-align: center;
+  transition: all 0.4s ease;
+  width: 50%;
+}
+
+.movie-form button:hover {
+  opacity: 1;
+}
+
+.movie-form button:active {
+  box-shadow: 0 0 0 0 rgb(58, 58, 58) , inset 3px 3px 3px rgb(58, 58, 58);
+  transform: translate(3px, 3px);
+}
+
+@media screen and ( max-width : 598px ) {
+
+  .movie-rating input {
+    width: 30%;
+  }
+
+  .movie-form select {
+    width: 35%;
+  }
+}
+
+@media screen and ( max-width : 500px ) {
+
+  .movie-form {
+    font-size: 12px;
+  }
+
+  .movie-rating input {
+    width: 22%;
+  }
+
+  .movie-form button {
+    font-size: 16px;
+  }
+}
+
+@media screen and ( max-width : 400px ) {
+
+  .movie-form {
+    font-size: 12px;
+  }
+
+  .movie-form select {
+    margin-right: 0;
+    width: 50%;
+  }
+
+  .movie-rating input {
+    width: 45%;
+  }
+
+  .movie-form button {
+    font-size: 12px;
+  }
+}

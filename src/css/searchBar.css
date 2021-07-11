@@ -1,0 +1,131 @@
+.form-searchBar {
+  align-items: center;
+  background-color: #222426;
+  border-bottom: 1px #c2c2c2 solid;
+  color: #c2c2c2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.form-searchBar input {
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+}
+
+.form-searchBar input:hover {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+.form-searchBar input:focus {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+.form-searchBar label:nth-child( 1 ) {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-searchBar label:nth-child( 1 ) input {
+  width: 90%;
+}
+
+.form-searchBar label:nth-child( 2 ) {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+  justify-content: center;
+  width: 45%;
+}
+
+.form-searchBar label:nth-child( 2 ) input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.form-searchBar label:nth-child( 3 ) {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+  justify-content: center;
+  width: 45%;
+}
+
+.form-searchBar label:nth-child( 3 ) select {
+  border: silver solid 2px;
+  border-radius: 5px;
+  margin-left: 5px;
+  outline: none;
+  width: 100px;
+}
+
+.form-searchBar label:nth-child( 3 ) select:hover {
+  border: #f48024 solid 2px;
+  box-shadow: 1px 1px 2px 2px #f48024;
+}
+
+@media screen and ( max-width : 598px ) {
+
+  .form-searchBar label:nth-child( 1 ) input {
+    width: 80%;
+  }
+
+  .form-searchBar label:nth-child( 1 ) {
+    width: 100%;
+  }
+
+  .form-searchBar label:nth-child( 2 ) {
+    width: 100%;
+  }
+
+  .form-searchBar label:nth-child( 3 ) {
+    width: 100%;
+  }
+}
+
+@media screen and ( max-width : 500px ) {
+
+  .form-searchBar {
+    box-sizing: content-box;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  .form-searchBar label:nth-child( 1 ) {
+    margin: 15px;
+  }
+
+  .form-searchBar label:nth-child( 1 ) input {
+    width: 75%;
+  }
+
+  .form-searchBar label:nth-child( 2 ) {
+    margin: 15px;
+  }
+
+  .form-searchBar label:nth-child( 3 ) {
+    height: 50px;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and ( max-width : 400px ) {
+
+  .form-searchBar label:nth-child( 3 ) {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,59 @@
+.movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.add-movie {
+  background-color: black;
+  border-radius: 5px;
+  color: #f48024;
+  cursor: pointer;
+  height: 20px;
+  opacity: 0.8;
+  padding: 10px;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  top: 50px;
+}
+
+.add-movie:hover {
+  opacity: 1;
+}
+
+
+@media screen and ( max-width : 598px ) {
+
+  .add-movie {
+    font-size: 12px;
+    height: 15px;
+    top: 65px;
+  }
+}
+
+@media screen and ( max-width : 500px ) {
+
+  .add-movie {
+    display: flex;
+    flex-direction: column;
+    height: 12px;
+    justify-content: center;
+    top: 115px;
+  }
+}
+
+@media screen and ( max-width : 400px ) {
+
+  .add-movie {
+    display: flex;
+    flex-direction: column;
+    height: 12px;
+    justify-content: center;
+    margin: 0;
+    top: 338px;
+  }
+}
+
