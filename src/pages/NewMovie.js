@@ -33,7 +33,7 @@ class NewMovie extends Component {
   render() {
     const { loading, shouldRedirect } = this.state;
 
-    if (shouldRedirect) return <Redirect to="/" />;
+    if (shouldRedirect) return <Redirect to="../../movie-card-library/" />;
 
     if (loading) return <Loading />;
 
